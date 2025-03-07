@@ -14,8 +14,8 @@ class Request
 
     public function getPath():string
     {
-        $path = $_SERVER["PATH_INFO"];
-
+        $path = $_SERVER["PATH_INFO"] ?? '/';
+        
         return $path;
 
     }

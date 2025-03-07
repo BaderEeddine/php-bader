@@ -1,3 +1,3 @@
 <?php 
 
-echo "<h1> hello im amhan haaa<?h1>";
+echo "<h1> hello amha </h1>";
