@@ -1,11 +1,15 @@
 <?php 
 
-namespace app\src\controller;
+namespace app\controller;
 
-class helloController
+use app\core\Controller;
+
+class HelloController extends Controller
 {
+
     public function index()
     {
-        return "hello";
+        $this->render('hello',['name'=>'oussama amha']);
+        
     }
 }

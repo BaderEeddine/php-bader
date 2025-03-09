@@ -1,17 +1,20 @@
 <?php
 
+
+
 require_once dirname(__DIR__)."/vendor/autoload.php";
 
+use app\controller\HelloController;
+use app\controller\AmhaController;
 use app\core\Application;
-use app\src\controller\helloController;
+
 
 $app = new Application();
 
-// echo dirname(__DIR__)."./vendor/autoload.php";
+ 
+$app->router->get("/hello", [HelloController::class,"index"]);
 
-$app->router->get("/hello", "hello");
-
-$app->router->get("/amha", [helloController::class,"index"]);
+$app->router->get("/amha",[AmhaController::class,"index"] );
 
 $app->router->get("/", "amha");
 

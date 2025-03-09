@@ -2,24 +2,28 @@
 
 namespace app\core ;
 
+
 class Application
 {
     public Router $router;
     public Request $request;
-    public View $view; 
-    public $path;
-    public $method;
+    public View $view;
+    public static Application $app;
+    public ?Controller $controller ;
 
     public function __construct()
     {
-        $this->router = new Router();                                                              
+        self::$app = $this;
+        $this->view = new View();
+        $this->router = new Router($this->view);                                                              
         $this->request = new Request();
-        $this->view = new View($this->router,$this->request); 
+        $this->controller = new Controller();
+        
     }
 
     public function run():void
     {
-       $this->view->render();
+       $this->router->resolve($this->request);
     }
 
 }

@@ -5,7 +5,7 @@ namespace app\core;
 class Response
 {
 
-    public function responseCode(int $code)
+    public static function responseCode(int $code)
     {
         http_response_code($code);
     }
