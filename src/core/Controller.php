@@ -1,6 +1,8 @@
 <?php 
 
 namespace app\core;
+require_once Application::$app->DIR."/bootstrap.php";
+
 
 class Controller
 {

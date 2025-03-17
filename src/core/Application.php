@@ -8,16 +8,17 @@ class Application
     public Router $router;
     public Request $request;
     public View $view;
+    public string $DIR;
     public static Application $app;
-    public ?Controller $controller ;
 
-    public function __construct()
+    public function __construct(string $dir)
     {
         self::$app = $this;
+        $this->DIR = $dir;
         $this->view = new View();
         $this->router = new Router($this->view);                                                              
         $this->request = new Request();
-        $this->controller = new Controller();
+        
         
     }
 

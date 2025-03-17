@@ -40,7 +40,7 @@ class Router
         else if (is_array( $callback)) {
 
             $callback[0] = new $callback[0];
-            call_user_func( $callback);
+            call_user_func( $callback ,$this->request);
 
         } 
         else if(is_string($callback)){
@@ -48,7 +48,7 @@ class Router
           $this->view->render($callback,[]);
         }
         else {
-            call_user_func( $callback);
+            call_user_func( $callback,$this->request);
         }
 
     }
