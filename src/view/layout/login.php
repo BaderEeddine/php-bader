@@ -1,14 +1,22 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
+
     <div class="container   mt-5 d-flex justify-content-center " >
         <div class=" w-50 mt-5">
+        <?php if(isset($errors)){
+                $firstKey = array_key_first($errors);
+               // var_dump($error);
+               echo '<div class="alert alert-danger text-center" role="alert">'.
+                    $errors[ $firstKey][0]
+                 .'</div>';
+                } 
+              if(isset($error))
+              {
+                echo '<div class="alert alert-danger text-center" role="alert">'.
+                $error
+             .'</div>';
+              }
+             
+            ?>
         <h2 class="text-center mt-3 pb-2" >Login</h2>
         <form  action="/login" method="post">
             <div class="form-group">
@@ -25,5 +33,3 @@
         </form>
     </div>  
     </div>  
-</body>
-</html>

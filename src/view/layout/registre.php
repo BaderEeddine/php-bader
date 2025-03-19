@@ -1,12 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
     <div class="container mt-5 d-flex justify-content-center" >
         <div class=" w-50">
             <?php if(isset($error)){
@@ -40,5 +32,3 @@
         </form>
     </div>  
     </div>  
-</body>
-</html>

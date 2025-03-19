@@ -8,7 +8,7 @@ class User extends Model {
     protected $table = 'users';
 
     // Fields that can be mass-assigned
-    protected $fillable = ['name', 'email'];
+    protected $fillable = ['name', 'email','password'];
 
     // Optional: Disable timestamps (created_at, updated_at)
     public $timestamps = false;
