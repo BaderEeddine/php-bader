@@ -6,13 +6,14 @@ require_once Application::$app->DIR."/bootstrap.php";
 
 class Controller
 {
-    protected View $view;
-    protected Router $router;
+    private View $view;
 
-    public function __construct(View $view, Router $router)
+    private Response $response;
+
+    public function __construct(View $view)
     {
         $this->view = $view;
-        $this->router = $router;
+        $this->response = new Response();
     }
     public function render(string $view, array $data = []): void
     {
@@ -25,7 +26,7 @@ class Controller
     public function redirect(string $url): void
     {
         try {
-            $this->router->redirect($url);
+            $this->response->redirect($url);
         } catch (\Exception $e) {
             throw new \Exception("Failed to redirect to: {$url}. Error: " . $e->getMessage());
         }

@@ -8,8 +8,6 @@ class View
     public function render($template ,$params = [])
     {
 
-      
-
       try {
         $layout = $this->layout($template, $params);
         $mainLayout = $this->mainLayout("main");
