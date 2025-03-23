@@ -12,24 +12,24 @@ Minimalistic custom framework
    ```
     mv .env.example .env
    ```
-3. Run `composer installe`
+3. Run `composer`
    ```
     composer installe
    ```
-4. Navigate to the project root directory and run
+5. Make sure you have docker installed. To see how you can install docker on Windows
+6. Navigate to the project root directory and run
 
    ```
     docker-compose up -d
    ```
-5. open php may admin in browser : http://localhost:8081/
-   
-6. Run migrations by executing
+7. open php may admin in browser : http://localhost:8081/
+8. Run migrations by executing
    ```
     php vendor/bin/phinx migrate
    ```
-7. Go to the `public`
-8. Start php server by running command
+9. Go to the `public`
+10. Start php server by running command
    ```
     php -S localhost:8080
    ```
-9. Open in browser : http://localhost:8080/
+10. Open in browser : http://localhost:8080/
