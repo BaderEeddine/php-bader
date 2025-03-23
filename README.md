@@ -1,1 +1,3 @@
-#                                        Php Mvc Framework
+# PHP MVC framework
+
+Minimalistic custom framework 
