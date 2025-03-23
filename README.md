@@ -21,7 +21,7 @@ Minimalistic custom framework
 
    ```
     docker-compose up -d
-   ```
+   ```  
 7. open php may admin in browser : http://localhost:8081/
 8. Run migrations by executing
    ```
@@ -29,7 +29,7 @@ Minimalistic custom framework
    ```
 9. Go to the `public`
 10. Start php server by running command
-   ```
+    ```
     php -S localhost:8080
-   ```
+    ```
 10. Open in browser : http://localhost:8080/
