@@ -22,7 +22,14 @@ Minimalistic custom framework
     docker-compose up -d
    ```
 5. open php may admin in browser : http://localhost:8081/
+   
 6. Run migrations by executing
    ```
     php vendor/bin/phinx migrate
    ```
+7. Go to the `public`
+8. Start php server by running command
+   ```
+    php -S localhost:8080
+   ```
+9. Open in browser : http://localhost:8080/
