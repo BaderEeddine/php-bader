@@ -1,0 +1,19 @@
+{
+    "name": "oussama/php-mvc-framework",
+    "autoload": {
+        "psr-4": {
+            "app\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "oussama"
+        }
+    ],
+    "require": {
+        "illuminate/database": "^12.1",
+        "robmorgan/phinx": "^0.16.6",
+        "vlucas/phpdotenv": "^5.6",
+        "amha/php-mvc-core": "^1.0"
+    }
+}

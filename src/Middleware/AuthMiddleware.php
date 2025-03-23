@@ -1,9 +1,8 @@
 <?php 
-
  namespace app\Middleware;
-
- use app\core\Middleware;
- use app\core\Response;
+ use Osama\phpmvc\Middleware;
+ use Osama\phpmvc\Response;
+ 
 
 class AuthMiddleware implements Middleware
 {

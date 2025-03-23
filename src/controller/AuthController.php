@@ -2,9 +2,10 @@
 
 namespace app\controller;
 
-use app\core\Controller;
-use app\core\Request;
+
 use app\Models\User;
+use Osama\phpmvc\Request;
+use Osama\phpmvc\Controller;
 
 class AuthController extends Controller
 {

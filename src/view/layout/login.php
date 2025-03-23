@@ -31,5 +31,6 @@
                 <input type="submit" class="btn btn-primary" value="Submit">
             </div>
         </form>
+        <a href="/registre">Registre</a>
     </div>  
     </div>  
