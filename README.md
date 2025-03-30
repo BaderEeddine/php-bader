@@ -16,7 +16,7 @@ Minimalistic custom framework
    ```
     composer installe
    ```
-5. Make sure you have docker installed. To see how you can install docker on Windows
+5. Make sure you have docker installed.
 6. Navigate to the project root directory and run
 
    ```
