@@ -33,3 +33,5 @@ Minimalistic custom framework
     php -S localhost:8080
     ```
 10. Open in browser : http://localhost:8080/
+11. print bader
+12. if bader
